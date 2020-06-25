@@ -333,7 +333,7 @@ Changes in Graph.tsx are done too. By now we should have  accomplished all the o
 <h1>Step3.Generate a patch file of the changes you made.</h1>
 <p>
 Follow this steps to create patch file 
-Fire up a terminal, enter the repository via the terminal you opened (via the cd
+open a terminal, enter the repository via the terminal you opened (via the cd
 <repo_name_here> aka change directory command) and do the following commands
 (one line, one command)</p><br/>
 <ol>
@@ -384,7 +384,7 @@ where you executed the command.
 <ol>
   <li> Node js fundamental</li>
   <li> React js fundamental</li>
-  <li> Type Scrip fundamental</li>
+  <li> Type Script fundamental</li>
 </ol><br/>
 <hr>
            <p> ALL THE BEST</p><br/>
