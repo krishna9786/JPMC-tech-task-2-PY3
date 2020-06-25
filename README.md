@@ -30,8 +30,15 @@ Perspective provides a set of flexible data transforms, such as pivots, filters,
 <p>
 For the second module of this project will need you to accomplish the following:
 <ol>
-<li>Set up your system by downloading the necessary files, tools and dependencies.<\li><br/>
-<li>Fix the broken typescript files in repository to make the web application output correctly<\li><br/>
+<li>Set up your system by downloading the necessary files, tools and dependencies.<\li> 
+  
+<li>Fix the broken typescript files in repository to make the web application output correctly<\li> 
+  
 <li>Generate a patch file of the changes you made.<\li><br/>
 
 </p>
+<hr>
+
+<h1>Step1:Set up your system </h1>
+ how to setup your enviroment for this task <a href="https://insidesherpa.s3.amazonaws.com/vinternships/companyassets/Sj7temL583QAYpHXD/setup_devenv_m1_v6.pdf" >Click Here</a> <br/>
+ <hr>
