@@ -109,3 +109,35 @@ interface IState {
   showGraph: boolean,
 }
 </pre>
+<p>
+Next, in the constructor of the App component, you should define that the
+initial state of the App not to show the graph yet. This is because we want the
+graph to show when the user clicks ‘Start Streaming Data’. That means you
+should set `showGraph` property of the App’s state to `false` in the
+constructor</p>
+
+so the code look like this 
+
+<h4> Before change</h4>
+<pre>
+class App extends Component<{}, IState> {
+  constructor(props: {}) {
+    super(props);
+    this.state = {
+      data: [],
+      
+    };
+  }
+</pre>
+
+<h4> After change</h4>
+<pre>
+class App extends Component<{}, IState> {
+  constructor(props: {}) {
+    super(props);
+    this.state = {
+      data: [],
+      showGraph: false,
+    };
+  }
+</pre>
