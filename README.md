@@ -141,3 +141,29 @@ class App extends Component<{}, IState> {
     };
   }
 </pre>
+<p>
+To ensure that the graph doesn’t render until a user clicks the ‘Start
+Streaming’ button, you should also edit the `renderGraph` method of the
+App. In there, you must add a condition to only render the graph when the
+state’s `showGraph` property of the App’s state is `true`.
+</p>
+
+so the code look like this 
+
+<h4> Before change</h4>
+<pre>
+  renderGraph() {
+      return (<Graph data={this.state.data}/>)
+  }
+</pre>
+
+<h4> After change</h4>
+<pre>
+  renderGraph() {
+   //checking if user clicked or not  
+    if (this.state.showGraph) {
+      return (<Graph data={this.state.data}/>)
+    }
+  }
+</pre>
+
