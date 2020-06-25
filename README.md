@@ -78,3 +78,14 @@ help us build interfaces and ui components, or Typescript which is just a
 superset of javascript but is still alike with javascript but with stronger type
 checking...
 </p>
+<p>
+App.tsx or the App component, is basically the first component our browser
+will render as it’s the parent component of the other parts of the simple page
+that shows up when you first started the application in the set up phase.
+</p>
+<p>
+● Components are basically the building blocks / parts of our web application. A
+component has a common set of properties / functions and as such, each
+unique component just inherits from the base React component
+
+</p>
