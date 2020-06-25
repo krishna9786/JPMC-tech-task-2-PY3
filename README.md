@@ -21,11 +21,11 @@ Typically, traders monitor stock prices and trading strategies by having data di
 
 JPMorgan Chase created the Perspective tool over many years to allows users to present and manipulate data feeds visually in web applications.
 
-Perspective provides a set of flexible data transforms, such as pivots, filters, and aggregations. It utilizes bleeding-edge browser technology such as Web Assembly and Apache Arrow and is unmatched in browser performance. It is engineered for reliability and production-vetted on the JPMorgan Chase trading floor and is now available to the development community as Open Source. If you want to explore that, a link is provided in the resources section. 
+Perspective provides a set of flexible data transforms, such as pivots, filters, and aggregations. It utilizes bleeding-edge browser technology such as Web Assembly and Apache Arrow and is unmatched in browser performance. It is engineered for reliability and production-vetted on the JPMorgan Chase trading floor and is now available to the development community as Open Source. If you want to explore that, a link is provided in the resources section. <br/>
 
-* Understanding the finance and trading part is not required for this task.
+* Understanding the finance and trading part is not required for this task.<br/>
 
-* Being familiar with python scripting language, command line basics, javascript, react and typescript are not required for this task too as you will be guided in this exercise
+* Being familiar with python scripting language, command line basics, javascript, react and typescript are not required for this task too as you will be guided in this exercise<br/>
 </p>
 
 <p>
@@ -79,29 +79,29 @@ so let's get start<p>
  
 <h3>Making changes in `App.tsx`</h3>
 <p>
-● App.tsx is the main app (typescript) file of our client side react application.
+● App.tsx is the main app (typescript) file of our client side react application.<br/>
 
 ● Don’t be intimidated by words like React, which is just a javascript library to
 help us build interfaces and ui components, or Typescript which is just a
 superset of javascript but is still alike with javascript but with stronger type
-checking...
+checking...<br/>
 </p>
 <p>
 App.tsx or the App component, is basically the first component our browser
 will render as it’s the parent component of the other parts of the simple page
-that shows up when you first started the application in the set up phase.
+that shows up when you first started the application in the set up phase.<br/>
 </p>
 <p>
 ● Components are basically the building blocks / parts of our web application. A
 component has a common set of properties / functions and as such, each
-unique component just inherits from the base React component
+unique component just inherits from the base React component<br/>
 
 </p>
 <p>
 First we need to add the `showGraph` property in the IState interface
 defined in App.tsx. It should be of the type` boolean`because we need to render the graph only if the user click the button star stream data 
 so the code look like this 
-</p>
+</p><br/>
 <h4> Before change</h4>
 <pre>
 interface IState {
@@ -122,7 +122,7 @@ Next, in the constructor of the App component, you should define that the
 initial state of the App not to show the graph yet. This is because we want the
 graph to show when the user clicks ‘Start Streaming Data’. That means you
 should set `showGraph` property of the App’s state to `false` in the
-constructor</p>
+constructor</p><br/>
 
 so the code look like this 
 
@@ -153,7 +153,7 @@ To ensure that the graph doesn’t render until a user clicks the ‘Start
 Streaming’ button, you should also edit the `renderGraph` method of the
 App. In there, you must add a condition to only render the graph when the
 state’s `showGraph` property of the App’s state is `true`.
-</p>
+</p><br/>
 
 so the code look like this 
 
@@ -181,6 +181,7 @@ Finally, we must also modify the `getDataFromServer`method to contact the
 server and get data from it continuously instead of just getting data from it
 once every time you click the button.
 </p>
+<br/>
 <p>
 Javascript has a way to do things in intervals and that is via the setInterval
 function. What we can do to make it continuous (at least up to an extended
@@ -225,15 +226,15 @@ getDataFromServer() {
   }
 </pre>
 <h3>Making changes in `Graph.tsx`</h3>
-<p> Next we going to make changes in Graph.tsx file 
+<p> Next we going to make changes in Graph.tsx file <br/>
   
 ● To completely achieve the desired output, we must also make changes to the
 `Graph.tsx` file. This is the file that takes care of how the Graph component
 of our App will be rendered and react to the state changes that occur within
-the App.
+the App.<br/>
 ● First, you must enable the `PerspectiveViewerElement` to behave like an
 HTMLElement. To do this, you can extend the `HTMLElement` class from the
-`PerspectiveViewerElement` interface.
+`PerspectiveViewerElement` interface.<br/>
 </p>
 so the code look like this 
 
@@ -255,11 +256,11 @@ interface PerspectiveViewerElement {
 ● After doing this, we now need to modify `componentDidMount` method. Just
 as a note, the componentDidMount() method runs after the component
 output has been rendered to the DOM. If you want to learn more about it and
-other lifecycle methods/parts of react components, read more here.
+other lifecycle methods/parts of react components, read more here.<br/>
 ● Since we have changed the `PerspectiveViewerElement` to extend the
 `HTMLElement` earlier, you can now make the definition of the `const elem`
 simpler, i.e. you can just assign it straight to the result of the
-`document.getElementsByTagName`.
+`document.getElementsByTagName`.<br/>
 </p>
 
 so the code look like this 
@@ -285,6 +286,7 @@ have read thru the Perspective configurations particularly on the table.view
 configurations. we need to add the following attributes: `view`,
 `column-pivots`, `row-pivots`, `columns` and `aggregates` .
 </p>
+<br/>
 so the code look like this 
 
 <h4> Before change</h4>
