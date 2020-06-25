@@ -14,3 +14,16 @@ This repo for the task 2<br/>
 <h3> WARNING: My English not so good. so applogize me </h3>
 <hr>
 <h1>Task2 </h1>
+
+<p>Here is the background information on our task
+
+Typically, traders monitor stock prices and trading strategies by having data displayed visually on their screens in chart form. Often these charts will be accompanied by alerts that notify users when certain events occur or when preset price thresholds are hit.
+
+JPMorgan Chase created the Perspective tool over many years to allows users to present and manipulate data feeds visually in web applications.
+
+Perspective provides a set of flexible data transforms, such as pivots, filters, and aggregations. It utilizes bleeding-edge browser technology such as Web Assembly and Apache Arrow and is unmatched in browser performance. It is engineered for reliability and production-vetted on the JPMorgan Chase trading floor and is now available to the development community as Open Source. If you want to explore that, a link is provided in the resources section. 
+
+* Understanding the finance and trading part is not required for this task.
+
+* Being familiar with python scripting language, command line basics, javascript, react and typescript are not required for this task too as you will be guided in this exercise
+</p>
