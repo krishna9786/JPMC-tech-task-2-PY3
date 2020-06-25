@@ -287,11 +287,10 @@ componentDidMount() {
       elem.load(this.table);
     }
   }
-
+</pre>
 <h4> After change</h4>
 <pre>
 componentDidMount() {
-    componentDidMount() {
     ....
     ....
      if (this.table) {
@@ -311,4 +310,8 @@ componentDidMount() {
     }
   }
 </pre>
+<p>
+Changes in Graph.tsx are done too. By now we should have  accomplished all the objectives of the task.
+</p>
+
 
