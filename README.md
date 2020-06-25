@@ -256,15 +256,17 @@ so the code look like this
 
 <h4> Before change</h4>
 <pre>
-interface PerspectiveViewerElement {
-  load: (table: Table) => void,
-}
+componentDidMount() {
+    // Get element to attach the table from the DOM.
+    const elem: PerspectiveViewerElement = document.getElementsByTagName('perspective-viewer')[0] as unknown as PerspectiveViewerElement;
+
 </pre>
 
 <h4> After change</h4>
 <pre>
- interface PerspectiveViewerElement extends HTMLElement {
-  load: (table: Table) => void,
-}
+componentDidMount() {
+    // Get element to attach the table from the DOM.
+    //no need to tell that element is  PerspectiveViewerElement because we extend the HTMLElement
+    const elem = document.getElementsByTagName('perspective-viewer')[0] as unknown as PerspectiveViewerElement;
 </pre>
 
