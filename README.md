@@ -152,7 +152,8 @@ so the code look like this
 <h4> Before change</h4>
 <pre>
   renderGraph() {
-      return (<Graph data={this.state.data}/>)
+       // return the graph component 
+       return (&lt;Graph data={this.state.data}/&gt;)
   }
 </pre>
 
@@ -161,6 +162,7 @@ so the code look like this
   renderGraph() {
    //checking if user clicked or not  
     if (this.state.showGraph) {
+      // return the graph component 
       return (&lt;Graph data={this.state.data}/&gt;)
     }
   }
