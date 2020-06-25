@@ -27,3 +27,11 @@ Perspective provides a set of flexible data transforms, such as pivots, filters,
 
 * Being familiar with python scripting language, command line basics, javascript, react and typescript are not required for this task too as you will be guided in this exercise
 </p>
+<p>
+For the second module of this project will need you to accomplish the following:
+<ol>
+<li>Set up your system by downloading the necessary files, tools and dependencies.<\li><br/>
+<li>Fix the broken typescript files in repository to make the web application output correctly<\li><br/>
+<li>Generate a patch file of the changes you made.<\li><br/>
+
+</p>
