@@ -241,5 +241,30 @@ interface PerspectiveViewerElement {
 }
 </pre>
 
+<p>
+● After doing this, we now need to modify `componentDidMount` method. Just
+as a note, the componentDidMount() method runs after the component
+output has been rendered to the DOM. If you want to learn more about it and
+other lifecycle methods/parts of react components, read more here.
+● Since we have changed the `PerspectiveViewerElement` to extend the
+`HTMLElement` earlier, you can now make the definition of the `const elem`
+simpler, i.e. you can just assign it straight to the result of the
+`document.getElementsByTagName`.
+</p>
 
+so the code look like this 
+
+<h4> Before change</h4>
+<pre>
+interface PerspectiveViewerElement {
+  load: (table: Table) => void,
+}
+</pre>
+
+<h4> After change</h4>
+<pre>
+ interface PerspectiveViewerElement extends HTMLElement {
+  load: (table: Table) => void,
+}
+</pre>
 
