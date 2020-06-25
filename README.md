@@ -182,17 +182,24 @@ so the code look like this
 
 <h4> Before change</h4>
 <pre>
-  renderGraph() {
-      return (<Graph data={this.state.data}/>)
+getDataFromServer() {
+   DataStreamer.getData((serverResponds: ServerRespond[]) => {
+      // Update the state by creating a new array of data that consists of
+      // Previous data in the state and the new data from server
+      this.setState({ data: [...this.state.data, ...serverResponds] });
+    });
   }
 </pre>
 
 <h4> After change</h4>
 <pre>
 getDataFromServer() {
+    //using a counter to clear the inerval after 1000ms 
     let x = 0;
+    //using arrow function to avoid "this" binding problem
     const interval = setInterval(() => {
       DataStreamer.getData((serverResponds: ServerRespond[]) => {
+       //setting the data to serverrespond data and showgraph as true
         this.setState({
           data: serverResponds,
           showGraph: true,
@@ -200,8 +207,10 @@ getDataFromServer() {
       });
       x++;
       if (x > 1000) {
+       //clear interval after 1000ms
         clearInterval(interval);
       }
     }, 100);
+    //calling the arrow function for each 100ms 
   }
 </pre>
