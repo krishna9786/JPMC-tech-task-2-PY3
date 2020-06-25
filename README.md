@@ -320,5 +320,21 @@ Changes in Graph.tsx are done too. By now we should have  accomplished all the o
 <hr/>
 
 <h1>Step3.Generate a patch file of the changes you made.</h1>
-
- 
+<p>
+Follow this steps to create patch file 
+Fire up a terminal, enter the repository via the terminal you opened (via the cd
+<repo_name_here> aka change directory command) and do the following commands
+(one line, one command)</p><br/>
+<ol>
+<li>git add -A</li>
+<li>git config user.email "<your_email_address>"</li>
+<li>git config user.name "<your_name>"</li>
+<li>git commit -m 'Create Patch File'</li>
+<li>git format-patch -1 HEAD</li>
+</ol>
+<br/>
+<br/>
+The final command, i.e. git format-patch -1 HEAD, should produce the .patch file
+you’d want to submit to complete this module. It will be located in the directory
+where you executed the command.
+<hr>
