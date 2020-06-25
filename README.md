@@ -369,7 +369,7 @@ where you executed the command.
     <li> <a href="https://www.youtube.com/watch?v=NjN00cM18Z4">YouTube videos</a></li>
     <li> <a href="https://www.youtube.com/watch?v=rAy_3SIqT-E">YouTube videos</a></li>
     <li> <a href="https://www.youtube.com/watch?v=ahCwqrYpIuM">YouTube videos</a></li>
-  </ol>
+  </ol><br/>
   <p>Last but not least <a href="https://www.w3schools.com/">W3School</a></p>
   </ol>
   
@@ -381,5 +381,7 @@ where you executed the command.
   <li> Node js fundamental</li>
   <li> React js fundamental</li>
   <li> >Type Scrip fundamental</li>
-</ol>
-                                                <p> ALL THE BEST</p>
+</ol><br/>
+<hr>
+           <p> ALL THE BEST</p><br/>
+<hr>
