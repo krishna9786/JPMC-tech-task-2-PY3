@@ -34,8 +34,8 @@ For the second module of this project will need you to accomplish the following:
   
 <li>Fix the broken typescript files in repository to make the web application output correctly<\li> 
   
-<li>Generate a patch file of the changes you made.<\li><br/>
-
+<li>Generate a patch file of the changes you made.<\li>
+ </ol>
 </p>
 <hr>
 
