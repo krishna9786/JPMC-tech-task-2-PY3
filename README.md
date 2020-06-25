@@ -43,7 +43,7 @@ For the second module of this project will need you to accomplish the following:
 <h1>Step1:Set up your system </h1>
  how to setup your enviroment for this task <a href="https://insidesherpa.s3.amazonaws.com/vinternships/companyassets/Sj7temL583QAYpHXD/setup_devenv_m1_v6.pdf" >Click Here</a> <br/>
  <hr>
-
+ 
 <h1>Step2:Fix the broken typescript files in repository to make the web application output correctly</h1>
 <p>
  Before fixing the broken Typescript files. we need to know some basic that are </p>
@@ -69,6 +69,7 @@ and need to uppdate the graph according to the data get from the server
 <p>
 so let's get start<p>
 <p>To achieve this we have to change (2) files: src/App.tsx and src/Graph.tsx<p>
+ 
 <h3>Making changes in `App.tsx`</h3>
 <p>
 ● App.tsx is the main app (typescript) file of our client side react application.
@@ -316,4 +317,8 @@ componentDidMount() {
 Changes in Graph.tsx are done too. By now we should have  accomplished all the objectives of the task.
 </p>
 
+<hr/>
 
+<h1>Step3.Generate a patch file of the changes you made.</h1>
+
+ 
