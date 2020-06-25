@@ -62,3 +62,10 @@ For the second module of this project will need you to accomplish the following:
       |--Graph.tsx  -> this  typescript program is responsible for drawing a graph on the browser
       |--Graph.css  -> this css file for graph.tsx 
 </pre>
+
+<p>The above codes are work fine but we need to modify the code such that it show the top_ask price from the two stocks("ABC","DEF") in graph
+and need to uppdate the graph according to the data get from the server 
+</p>
+<p>
+so let's get start<p>
+<p>To achieve this we have to change (2) files: src/App.tsx and src/Graph.tsx<p>
