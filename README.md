@@ -161,7 +161,7 @@ so the code look like this
   renderGraph() {
    //checking if user clicked or not  
     if (this.state.showGraph) {
-      return (<Graph data={this.state.data}/>)
+      return (&lt;Graph data={this.state.data}/&gt;)
     }
   }
 </pre>
