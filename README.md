@@ -214,3 +214,32 @@ getDataFromServer() {
     //calling the arrow function for each 100ms 
   }
 </pre>
+<h3>Making changes in `Graph.tsx`</h3>
+<p> Next we going to make changes in Graph.tsx file 
+  
+● To completely achieve the desired output, we must also make changes to the
+`Graph.tsx` file. This is the file that takes care of how the Graph component
+of our App will be rendered and react to the state changes that occur within
+the App.
+● First, you must enable the `PerspectiveViewerElement` to behave like an
+HTMLElement. To do this, you can extend the `HTMLElement` class from the
+`PerspectiveViewerElement` interface.
+</p>
+so the code look like this 
+
+<h4> Before change</h4>
+<pre>
+interface PerspectiveViewerElement {
+  load: (table: Table) => void,
+}
+</pre>
+
+<h4> After change</h4>
+<pre>
+ interface PerspectiveViewerElement extends HTMLElement {
+  load: (table: Table) => void,
+}
+</pre>
+
+
+
