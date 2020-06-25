@@ -89,3 +89,23 @@ component has a common set of properties / functions and as such, each
 unique component just inherits from the base React component
 
 </p>
+<p>
+First we need to add the `showGraph` property in the IState interface
+defined in App.tsx. It should be of the type` boolean`because we need to render the graph only if the user click the button star stream data 
+so the code look like this 
+</p>
+<h4> Before change</h4>
+<pre>
+interface IState {
+  // this is used to store the data get from the server the type of data is SeverRespond 
+  data: ServerRespond[], 
+}
+</pre>
+<h4>After change</h4>
+<pre>
+interface IState {
+  // this is used to store the data get from the server the type of data is SeverRespond 
+  data: ServerRespond[],
+  showGraph: boolean,
+}
+</pre>
