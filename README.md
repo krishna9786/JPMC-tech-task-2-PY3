@@ -75,8 +75,10 @@ and need to uppdate the graph according to the data get from the server
 </p>
 <p>
 so let's get start<p>
-<p>To achieve this we have to change (2) files: src/App.tsx and src/Graph.tsx<p>
- 
+<p>To achieve this we have to change (2) files</p><br/>
+1.src/Graph.tsx <br/>
+2.src/DataManipulator.ts<br/>
+<br/>
 <h3>Making changes in `App.tsx`</h3>
 <p>
 ● App.tsx is the main app (typescript) file of our client side react application.<br/>
