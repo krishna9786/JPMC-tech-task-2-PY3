@@ -69,3 +69,12 @@ and need to uppdate the graph according to the data get from the server
 <p>
 so let's get start<p>
 <p>To achieve this we have to change (2) files: src/App.tsx and src/Graph.tsx<p>
+<h3>Making changes in `App.tsx`</h3>
+<p>
+● App.tsx is the main app (typescript) file of our client side react application.
+
+● Don’t be intimidated by words like React, which is just a javascript library to
+help us build interfaces and ui components, or Typescript which is just a
+superset of javascript but is still alike with javascript but with stronger type
+checking...
+</p>
