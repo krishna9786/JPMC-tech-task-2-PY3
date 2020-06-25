@@ -27,18 +27,26 @@ Perspective provides a set of flexible data transforms, such as pivots, filters,
 
 * Being familiar with python scripting language, command line basics, javascript, react and typescript are not required for this task too as you will be guided in this exercise
 </p>
+
 <p>
 For the second module of this project will need you to accomplish the following:
-<ol>
-<li>Set up your system by downloading the necessary files, tools and dependencies.<\li> 
+
+1.Set up your system by downloading the necessary files, tools and dependencies. 
   
-<li>Fix the broken typescript files in repository to make the web application output correctly<\li> 
+2.Fix the broken typescript files in repository to make the web application output correctly.
   
-<li>Generate a patch file of the changes you made.<\li>
- </ol>
+3.Generate a patch file of the changes you made.
+ 
 </p>
 <hr>
 
 <h1>Step1:Set up your system </h1>
  how to setup your enviroment for this task <a href="https://insidesherpa.s3.amazonaws.com/vinternships/companyassets/Sj7temL583QAYpHXD/setup_devenv_m1_v6.pdf" >Click Here</a> <br/>
  <hr>
+
+<h1>Step2:Fix the broken typescript files in repository to make the web application output correctly</h1>
+<p>
+ Before fixing the broken Typescript files. we need to know some basic that are </p>
+ <ol>
+  <li> The file structure of the program </li>
+        
