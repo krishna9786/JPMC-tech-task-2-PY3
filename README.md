@@ -380,7 +380,7 @@ where you executed the command.
 <ol>
   <li> Node js fundamental</li>
   <li> React js fundamental</li>
-  <li> >Type Scrip fundamental</li>
+  <li> Type Scrip fundamental</li>
 </ol><br/>
 <hr>
            <p> ALL THE BEST</p><br/>
