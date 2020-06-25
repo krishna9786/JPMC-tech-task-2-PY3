@@ -364,3 +364,22 @@ where you executed the command.
     <li> <a href="https://www.youtube.com/watch?v=Ke90Tje7VS0">YouTube videos</a></li>
   </ol>
   
+<li>Type Script resource</li>
+  <ol>
+    <li> <a href="https://www.youtube.com/watch?v=NjN00cM18Z4">YouTube videos</a></li>
+    <li> <a href="https://www.youtube.com/watch?v=rAy_3SIqT-E">YouTube videos</a></li>
+    <li> <a href="https://www.youtube.com/watch?v=ahCwqrYpIuM">YouTube videos</a></li>
+  </ol>
+  <p>Last but not least <a href="https://www.w3schools.com/">W3School</a></p>
+  </ol>
+  
+<hr>
+<h1> Conclusion</h1>
+
+<p> What are the things i learned from this task</p>
+<ol>
+  <li> Node js fundamental</li>
+  <li> React js fundamental</li>
+  <li> >Type Scrip fundamental</li>
+</ol>
+                                                <p> ALL THE BEST</p>
