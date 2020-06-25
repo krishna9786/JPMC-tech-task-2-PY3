@@ -76,8 +76,8 @@ and need to uppdate the graph according to the data get from the server
 <p>
 so let's get start<p>
 <p>To achieve this we have to change (2) files</p><br/>
-1.src/Graph.tsx <br/>
-2.src/DataManipulator.ts<br/>
+1.src/App.tsx.ts <br/>
+2.src/Graph.tsx<br/>
 <br/>
 <h3>Making changes in `App.tsx`</h3>
 <p>
