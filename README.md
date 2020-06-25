@@ -269,4 +269,46 @@ componentDidMount() {
     //no need to tell that element is  PerspectiveViewerElement because we extend the HTMLElement
     const elem = document.getElementsByTagName('perspective-viewer')[0] as unknown as PerspectiveViewerElement;
 </pre>
+<p>
+Finally, we need to add more attributes to the element. For this we have to
+have read thru the Perspective configurations particularly on the table.view
+configurations. we need to add the following attributes: `view`,
+`column-pivots`, `row-pivots`, `columns` and `aggregates` .
+</p>
+so the code look like this 
+
+<h4> Before change</h4>
+<pre>
+componentDidMount() {
+    ....
+    ....
+     if (this.table) {
+      // Load the `table` in the `<perspective-viewer>` DOM reference.
+      elem.load(this.table);
+    }
+  }
+
+<h4> After change</h4>
+<pre>
+componentDidMount() {
+    componentDidMount() {
+    ....
+    ....
+     if (this.table) {
+      // Load the `table` in the `<perspective-viewer>` DOM reference.
+      elem.load(this.table);
+      /* adding attribute to Perspective-viewer elements*/
+      /*set view to y_line*/
+      elem.setAttribute('view','y_line');
+      /* set column-pivots to stock (ABC or DEF)*/
+      elem.setAttribute('column-pivots','["stock"]');
+       /* set row-pivots to timestamp*/
+      elem.setAttribute('row-pivots','["timestamp"]');
+     /* set columns to top_ask_price */
+      elem.setAttribute('columns','["top_ask_price"]');
+      /*aggregates to avoid duplicate data*/
+       elem.setAttribute('aggregates','{"stock":"distinct count","top_ask_price":"avg","top_bid_price": "avg","timestamp": "distinct count"}');
+    }
+  }
+</pre>
 
