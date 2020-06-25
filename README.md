@@ -42,6 +42,13 @@ For the second module of this project will need you to accomplish the following:
 
 <h1>Step1:Set up your system </h1>
  how to setup your enviroment for this task <a href="https://insidesherpa.s3.amazonaws.com/vinternships/companyassets/Sj7temL583QAYpHXD/setup_devenv_m1_v6.pdf" >Click Here</a> <br/>
+ <p> how to run the code </p>
+ <pre>
+ python datafeed/server3.py // it start the server
+ npm install  // it install the dependency pkg
+ npm start  // it start our app
+ </pre>
+ 
  <hr>
  
 <h1>Step2:Fix the broken typescript files in repository to make the web application output correctly</h1>
@@ -338,3 +345,14 @@ The final command, i.e. git format-patch -1 HEAD, should produce the .patch file
 you’d want to submit to complete this module. It will be located in the directory
 where you executed the command.
 <hr>
+
+<h1>Resource</h1>
+<p> Finally i am going to share the resource i used for this task</p>
+<ol>
+  <li>Node js resource</li>
+  <ol>
+    <li> <a href="https://www.youtube.com/watch?v=fBNz5xF-Kx4">YouTube videos</a></li>
+    <li> <a href="https://www.youtube.com/watch?v=vJEO57B05Sg">YouTube videos</a></li>
+    <li> <a href="https://www.youtube.com/watch?v=TlB_eWDSMt4">YouTube videos</a></li>
+  </ol>
+    
