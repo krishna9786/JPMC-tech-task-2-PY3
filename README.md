@@ -124,8 +124,7 @@ class App extends Component<{}, IState> {
   constructor(props: {}) {
     super(props);
     this.state = {
-      data: [],
-      
+      data: [],   
     };
   }
 </pre>
@@ -167,3 +166,42 @@ so the code look like this
   }
 </pre>
 
+<p>
+Finally, we must also modify the `getDataFromServer`method to contact the
+server and get data from it continuously instead of just getting data from it
+once every time you click the button.
+</p>
+<p>
+Javascript has a way to do things in intervals and that is via the setInterval
+function. What we can do to make it continuous (at least up to an extended
+period of time) is to have a guard value that we can check against when to
+stop / clear the interval process we started.
+</p>
+
+so the code look like this 
+
+<h4> Before change</h4>
+<pre>
+  renderGraph() {
+      return (<Graph data={this.state.data}/>)
+  }
+</pre>
+
+<h4> After change</h4>
+<pre>
+getDataFromServer() {
+    let x = 0;
+    const interval = setInterval(() => {
+      DataStreamer.getData((serverResponds: ServerRespond[]) => {
+        this.setState({
+          data: serverResponds,
+          showGraph: true,
+        });
+      });
+      x++;
+      if (x > 1000) {
+        clearInterval(interval);
+      }
+    }, 100);
+  }
+</pre>
